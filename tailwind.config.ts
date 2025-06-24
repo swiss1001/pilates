@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,55 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Cores personalizadas para o Clube das Pilateiras
+				'pilates-purple': {
+					50: '#faf7ff',
+					100: '#f3edff',
+					200: '#e9ddff',
+					300: '#d4bbff',
+					400: '#b688ff',
+					500: '#9654ff',
+					600: '#8b30ff',
+					700: '#7c1eff',
+					800: '#6818d1',
+					900: '#5615a8'
+				},
+				'pilates-lilac': {
+					50: '#fdfcfe',
+					100: '#faf7fe',
+					200: '#f4edfc',
+					300: '#ebd9f8',
+					400: '#ddbdf1',
+					500: '#ca9ae8',
+					600: '#b478da',
+					700: '#9b5fc4',
+					800: '#8250a1',
+					900: '#6b4382'
+				},
+				'pilates-mint': {
+					50: '#f0fdfc',
+					100: '#c5f9f6',
+					200: '#99f2ed',
+					300: '#5de5dc',
+					400: '#2bcfc4',
+					500: '#14b5aa',
+					600: '#0f9187',
+					700: '#12746e',
+					800: '#155d58',
+					900: '#164e4a'
+				},
+				'pilates-rose': {
+					50: '#fef7f6',
+					100: '#fdedec',
+					200: '#fde0dd',
+					300: '#fbc6c0',
+					400: '#f79e94',
+					500: '#f0756a',
+					600: '#de5347',
+					700: '#bc4137',
+					800: '#9d3a32',
+					900: '#83372f'
 				}
 			},
 			borderRadius: {
@@ -84,11 +134,36 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'scale-in': {
+					'0%': {
+						transform: 'scale(0.95)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'scale-in': 'scale-in 0.2s ease-out'
+			},
+			fontFamily: {
+				'pilates': ['Inter', 'system-ui', 'sans-serif']
 			}
 		}
 	},
