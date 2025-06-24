@@ -10,14 +10,19 @@ import OfferSection from "@/components/OfferSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
+import VideoSection from "@/components/VideoSection";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <HeroSection />
+      <VideoHero /> {/* 🎥 Primeiro vídeo na primeira seção */}
+
       <BenefitsSection />
       <PainPointsSection />
       <AboutProductSection />
+      <VideoAbout /> {/* 🎥 Segundo vídeo na quarta seção */}
+
       <ProgramsSection />
       <TestimonialsSection />
       <EmotionalBenefitsSection />
