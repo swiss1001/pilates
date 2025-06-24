@@ -44,25 +44,31 @@ const AboutProductSection = () => {
               </div>
             </div>
 
-            {/* Image */}
+            {/* Video */}
             <div className="relative animate-scale-in">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-pilates-purple-200 to-pilates-mint-200 rounded-3xl blur-2xl opacity-30"></div>
                 <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
-                  <div className="w-full h-80 bg-gradient-to-br from-pilates-lilac-100 via-pilates-purple-100 to-pilates-mint-100 rounded-2xl flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-white rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
-                        <span className="text-4xl">🏠</span>
-                      </div>
-                      <h3 className="text-xl font-bold text-pilates-purple-700 mb-2">Treino em Casa</h3>
-                      <p className="text-pilates-purple-600">Sua academia pessoal</p>
-                      <div className="flex justify-center gap-2 mt-4">
-                        <div className="w-3 h-3 bg-pilates-purple-300 rounded-full"></div>
-                        <div className="w-3 h-3 bg-pilates-mint-300 rounded-full"></div>
-                        <div className="w-3 h-3 bg-pilates-rose-300 rounded-full"></div>
-                      </div>
-                    </div>
-                  </div>
+                  <vturb-smartplayer 
+                    id="vid-67526d38fbf820d8fc346500" 
+                    style={{ 
+                      display: 'block', 
+                      margin: '0 auto', 
+                      width: '100%', 
+                      maxWidth: '400px' 
+                    }}
+                  ></vturb-smartplayer>
+                  <script 
+                    type="text/javascript"
+                    dangerouslySetInnerHTML={{
+                      __html: `
+                        var s=document.createElement("script"); 
+                        s.src="https://scripts.converteai.net/1b3eff3e-0644-41a2-8abf-b6b15edc9f1c/players/67526d38fbf820d8fc346500/v4/player.js"; 
+                        s.async=true;
+                        document.head.appendChild(s);
+                      `
+                    }}
+                  />
                 </div>
               </div>
             </div>

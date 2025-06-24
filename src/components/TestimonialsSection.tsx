@@ -5,7 +5,7 @@ const TestimonialsSection = () => {
       name: "Fernanda Silva",
       age: 34,
       text: "Nunca imaginei que treinar em casa poderia me fazer tão bem! Me sinto mais forte e confiante.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+      image: "/lovable-uploads/a22ee916-f2a9-49f7-a423-727dfc173b0a.png"
     },
     {
       name: "Marina Costa",

@@ -18,8 +18,8 @@ const EmotionalBenefitsSection = () => {
             <div className="relative animate-scale-in">
               <div className="bg-white rounded-3xl p-8 shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                  alt="Transformação - Antes e Depois"
+                  src="/lovable-uploads/aa1dfed7-d2ec-4a0e-83cf-8632097fe419.png"
+                  alt="Transformação - Antes e Depois da Giselle"
                   className="w-full h-80 object-cover rounded-2xl"
                 />
                 <div className="absolute top-4 left-4 bg-pilates-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
