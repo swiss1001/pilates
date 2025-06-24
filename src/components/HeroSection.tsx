@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-pilates-lilac-50 via-white to-pilates-purple-50 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-pilates-lilac-50 via-white to-pilates-purple-50 overflow-hidden pb-0">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-10 left-10 w-32 h-32 bg-pilates-mint-200 rounded-full blur-3xl"></div>
@@ -45,21 +45,58 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Hero Image/Illustration */}
+          {/* Video */}
           <div className="flex-1 relative animate-scale-in">
             <div className="relative w-full max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-r from-pilates-purple-400 to-pilates-mint-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
-                <div className="w-full h-80 bg-gradient-to-br from-pilates-lilac-100 to-pilates-mint-100 rounded-2xl flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-pilates-purple-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <span className="text-3xl">🧘‍♀️</span>
-                    </div>
-                    <p className="text-pilates-purple-600 font-semibold">Pilates em Casa</p>
-                    <p className="text-gray-500 text-sm mt-2">Transformação Real</p>
-                  </div>
-                </div>
+              <div 
+                id="vid_65f3bf5b5448bc00082f1aef" 
+                style={{ 
+                  position: 'relative', 
+                  width: '100%', 
+                  padding: '56.25% 0 0',
+                  borderRadius: '24px',
+                  overflow: 'hidden',
+                  boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                <img 
+                  id="thumb_65f3bf5b5448bc00082f1aef" 
+                  src="https://images.converteai.net/1b3eff3e-0644-41a2-8abf-b6b15edc9f1c/players/65f3bf5b5448bc00082f1aef/thumbnail.jpg" 
+                  style={{ 
+                    position: 'absolute', 
+                    top: 0, 
+                    left: 0, 
+                    width: '100%', 
+                    height: '100%', 
+                    objectFit: 'cover', 
+                    display: 'block' 
+                  }} 
+                  alt="thumbnail" 
+                />
+                <div 
+                  id="backdrop_65f3bf5b5448bc00082f1aef" 
+                  style={{
+                    WebkitBackdropFilter: 'blur(5px)',
+                    backdropFilter: 'blur(5px)',
+                    position: 'absolute',
+                    top: 0,
+                    height: '100%',
+                    width: '100%'
+                  }}
+                ></div>
               </div>
+              <script 
+                type="text/javascript" 
+                id="scr_65f3bf5b5448bc00082f1aef"
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/1b3eff3e-0644-41a2-8abf-b6b15edc9f1c/players/65f3bf5b5448bc00082f1aef/player.js"; 
+                    s.async=true;
+                    document.head.appendChild(s);
+                  `
+                }}
+              />
             </div>
           </div>
         </div>

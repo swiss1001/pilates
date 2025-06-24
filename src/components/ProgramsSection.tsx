@@ -38,12 +38,6 @@ const ProgramsSection = () => {
       subtitle: "Força e equilíbrio",
       imageUrl: "/lovable-uploads/034f054a-4a22-4da7-b5a4-03626c8753c0.png",
       color: "purple"
-    },
-    {
-      title: "YOGA NA CADEIRA",
-      subtitle: "Alongamento e relaxamento",
-      imageUrl: "/lovable-uploads/65518887-4c84-4a31-872c-c7bd2135350a.png",
-      color: "mint"
     }
   ];
 
@@ -55,11 +49,11 @@ const ProgramsSection = () => {
             Programas Disponíveis na <span className="text-pilates-purple-600">Plataforma</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Mais de 7 programas completos, pensados para diferentes objetivos e níveis de experiência
+            Mais de 6 programas completos, pensados para diferentes objetivos e níveis de experiência
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {programs.map((program, index) => (
             <ProgramCard
               key={index}
