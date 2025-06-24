@@ -1,15 +1,15 @@
+import HeroSection from "@/components/ui/HeroSection";
+import BenefitsSection from "@/components/ui/BenefitsSection";
+import PainPointsSection from "@/components/ui/PainPointsSection";
+import AboutProductSection from "@/components/ui/AboutProductSection";
+import ProgramsSection from "@/components/ui/ProgramsSection";
+import TestimonialsSection from "@/components/ui/TestimonialsSection";
+import EmotionalBenefitsSection from "@/components/ui/EmotionalBenefitsSection";
+import OfferSection from "@/components/ui/OfferSection";
+import GuaranteeSection from "@/components/ui/GuaranteeSection";
+import FinalCTASection from "@/components/ui/FinalCTASection";
+import Footer from "@/components/ui/Footer";
 
-import HeroSection from "@/components/HeroSection";
-import BenefitsSection from "@/components/BenefitsSection";
-import PainPointsSection from "@/components/PainPointsSection";
-import AboutProductSection from "@/components/AboutProductSection";
-import ProgramsSection from "@/components/ProgramsSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import EmotionalBenefitsSection from "@/components/EmotionalBenefitsSection";
-import OfferSection from "@/components/OfferSection";
-import GuaranteeSection from "@/components/GuaranteeSection";
-import FinalCTASection from "@/components/FinalCTASection";
-import Footer from "@/components/Footer";
 import VideoHero from "@/components/ui/VideoHero";
 import VideoAbout from "@/components/ui/VideoAbout";
 
@@ -17,12 +17,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <HeroSection />
-      <VideoHero /> {/* 🎥 Primeiro vídeo na primeira seção */}
+      <VideoHero /> {/* 🎥 Primeiro vídeo */}
 
       <BenefitsSection />
       <PainPointsSection />
       <AboutProductSection />
-      <VideoAbout /> {/* 🎥 Segundo vídeo na quarta seção */}
+      <VideoAbout /> {/* 🎥 Segundo vídeo */}
 
       <ProgramsSection />
       <TestimonialsSection />
