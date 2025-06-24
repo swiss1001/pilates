@@ -10,8 +10,8 @@ import OfferSection from "@/components/OfferSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
-import VideoHero from "@/components/VideoHero";
-import VideoAbout from "@/components/VideoAbout";
+import VideoHero from "@/components/ui/VideoHero";
+import VideoAbout from "@/components/ui/VideoAbout";
 
 const Index = () => {
   return (
