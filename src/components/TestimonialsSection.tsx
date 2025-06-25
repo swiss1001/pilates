@@ -11,12 +11,6 @@ const TestimonialsSection = () => {
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
     },
     {
-      name: "Marina Costa",
-      age: 41,
-      text: "O Clube das Pilateiras mudou minha rotina completamente. Agora tenho energia para tudo!",
-      image: "https://images.unsplash.com/photo-1585421514287-27fdb33aa6c3?ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJldHR5JTIwd29tYW58ZW58MHx8MHx8&ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-    },
-    {
       name: "Juliana Santos",
       age: 36,
       text: "Finalmente encontrei algo que cabe na minha rotina. Os treinos são perfeitos!",
