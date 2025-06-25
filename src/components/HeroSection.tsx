@@ -43,17 +43,18 @@ const HeroSection = () => {
               de bem com o corpo… treinando no conforto de casa!
             </p>
 
-            <div className="mb-8 lg:mb-0 px-4 sm:px-0">
+            <div className="mb-8 lg:mb-0 px-4 sm:px-0 overflow-hidden">
               <Button
                 onClick={scrollToOffer}
                 size="lg"
-                className="bg-pilates-purple-600 hover:bg-pilates-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-              >
-                Quero Fazer Parte do Clube das Pilateiras
-                <ArrowDown className="ml-2 h-5 w-5" />
+                className="bg-pilates-purple-600 hover:bg-pilates-purple-700 text-white px-6 py-4 text-base sm:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-full text-center"
+            >
+                <span className="whitespace-normal break-words">
+                  Quero Fazer Parte do Clube das Pilateiras
+                </span>
+                <ArrowDown className="ml-2 h-5 w-5 shrink-0" />
               </Button>
             </div>
-          </div>
 
           {/* Video */}
           <div className="flex-1 animate-fade-in order-1 lg:order-2 w-full px-4 sm:px-0">
