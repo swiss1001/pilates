@@ -1,32 +1,25 @@
-import { useEffect } from "react";
-
 const AboutProductSection = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js";
-    script.async = true;
-    document.head.appendChild(script);
-  }, []);
-
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-            {/* Texto - igual ao seu atual */}
+            {/* Texto */}
             <div className="animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 O Que é o <span className="text-pilates-purple-600">Clube das Pilateiras</span>?
               </h2>
+
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 É uma <strong className="text-pilates-purple-600">plataforma online completa</strong> com treinos de pilates e yoga, 
                 pensados para mulheres que querem sair do sedentarismo, melhorar a saúde, emagrecer, 
                 fortalecer o corpo e viver com mais leveza.
               </p>
+
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 <strong className="text-pilates-mint-600">Tudo no conforto da sua casa.</strong>
               </p>
+
               <div className="bg-gradient-to-r from-pilates-purple-50 to-pilates-mint-50 rounded-2xl p-6">
                 <h3 className="font-bold text-xl text-gray-800 mb-4">✨ Você vai ter acesso a:</h3>
                 <ul className="space-y-3">
@@ -50,16 +43,17 @@ const AboutProductSection = () => {
               </div>
             </div>
 
-            {/* Vídeo da ConverteAI (sem iframe manual!) */}
-            <div className="relative animate-scale-in flex justify-center items-center">
-              <div
-                id="ifr_67526d38fbf820d8fc346500_wrapper"
-                style={{ margin: "0 auto", width: "100%", maxWidth: 400 }}
-              >
-                <div
-                  id="ifr_67526d38fbf820d8fc346500_aspect"
-                  style={{ padding: "177.78% 0 0 0", position: "relative" }}
-                />
+            {/* Novo Vídeo (modo 9:16) */}
+            <div className="flex justify-center items-center animate-scale-in">
+              <div className="relative w-full max-w-[360px] aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-white">
+                <iframe
+                  src="https://scripts.converteai.net/1b3eff3e-0644-41a2-8abf-b6b15edc9f1c/players/67526d38fbf820d8fc346500/embed.html"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  className="w-full h-full rounded-3xl"
+                  referrerPolicy="origin"
+                ></iframe>
               </div>
             </div>
 
@@ -71,6 +65,7 @@ const AboutProductSection = () => {
 };
 
 export default AboutProductSection;
+
 
 
 
