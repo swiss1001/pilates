@@ -24,7 +24,7 @@ const FinalCTASection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Quero Fazer Parte do Clube das Pilateiras!
+                Quero mudar meu corpo!
               </a>
             </Button>
           </div>
