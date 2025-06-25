@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const OfferSection = () => {
@@ -52,7 +51,7 @@ const OfferSection = () => {
                 className="bg-pilates-purple-600 hover:bg-pilates-purple-700 text-white px-12 py-6 text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 <a href="https://pay.hotmart.com/V90721651L?bid=1750789001622" target="_blank" rel="noopener noreferrer">
-                  Quero Entrar no Clube das Pilateiras
+                  Assinar agora
                 </a>
               </Button>
             </div>
@@ -64,3 +63,4 @@ const OfferSection = () => {
 };
 
 export default OfferSection;
+
