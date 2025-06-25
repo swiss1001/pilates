@@ -1,4 +1,13 @@
+import { useEffect } from "react";
+
 const AboutProductSection = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js";
+    script.async = true;
+    document.head.appendChild(script);
+  }, []);
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -43,17 +52,39 @@ const AboutProductSection = () => {
               </div>
             </div>
 
-            {/* Vídeo Vertical (9:16) */}
+            {/* Vídeo ConverteAI v4 */}
             <div className="relative animate-scale-in flex justify-center items-center">
-              <div className="relative w-full max-w-[360px] aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-white">
-                <iframe
-                  src="https://scripts.converteai.net/1b3eff3e-0644-41a2-8abf-b6b15edc9f1c/players/66a3ad37268488000b4c124e/embed.html"
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  className="w-full h-full rounded-3xl"
-                  style={{ display: "block" }}
-                ></iframe>
+              <div
+                id="ifr_67526d38fbf820d8fc346500_wrapper"
+                style={{ margin: "0 auto", width: "100%", maxWidth: 400 }}
+              >
+                <div
+                  id="ifr_67526d38fbf820d8fc346500_aspect"
+                  style={{ padding: "177.78% 0 0 0", position: "relative" }}
+                >
+                  <iframe
+                    id="ifr_67526d38fbf820d8fc346500"
+                    src="about:blank"
+                    allowFullScreen
+                    frameBorder="0"
+                    referrerPolicy="origin"
+                    onLoad={(e) => {
+                      const iframe = e.currentTarget;
+                      iframe.src =
+                        "https://scripts.converteai.net/1b3eff3e-0644-41a2-8abf-b6b15edc9f1c/players/67526d38fbf820d8fc346500/v4/embed.html" +
+                        (window.location.search || "?") +
+                        "&vl=" +
+                        encodeURIComponent(window.location.href);
+                    }}
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  ></iframe>
+                </div>
               </div>
             </div>
 
@@ -65,5 +96,6 @@ const AboutProductSection = () => {
 };
 
 export default AboutProductSection;
+
 
 
