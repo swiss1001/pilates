@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 
 const TestimonialsSection = () => {
-  const testimonials = [
+  const testimonials = 
+  [
     {
       name: "Fernanda Silva",
       age: 34,
