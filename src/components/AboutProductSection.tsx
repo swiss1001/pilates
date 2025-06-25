@@ -20,8 +20,8 @@ const AboutProductSection = () => {
               </h2>
 
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                É uma <strong className="text-pilates-purple-600">plataforma online completa</strong> com treinos de pilates e yoga, 
-                pensados para mulheres que querem sair do sedentarismo, melhorar a saúde, emagrecer, 
+                É uma <strong className="text-pilates-purple-600">plataforma online completa</strong> com treinos de pilates e yoga,
+                pensados para mulheres que querem sair do sedentarismo, melhorar a saúde, emagrecer,
                 fortalecer o corpo e viver com mais leveza.
               </p>
 
@@ -64,6 +64,7 @@ const AboutProductSection = () => {
                 >
                   <iframe
                     id="ifr_67526d38fbf820d8fc346500"
+                    title="ConverteAI Player"
                     src="about:blank"
                     allowFullScreen
                     frameBorder="0"
@@ -96,6 +97,7 @@ const AboutProductSection = () => {
 };
 
 export default AboutProductSection;
+
 
 
 
