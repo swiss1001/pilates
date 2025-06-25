@@ -48,13 +48,14 @@ const HeroSection = () => {
                 onClick={scrollToOffer}
                 size="lg"
                 className="bg-pilates-purple-600 hover:bg-pilates-purple-700 text-white px-6 py-4 text-base sm:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-full text-center"
-            >
+              >
                 <span className="whitespace-normal break-words">
-                  Quero entrar para o Clube das Pilateiras
+                  Quero entrar no Clube das Pilateiras
                 </span>
                 <ArrowDown className="ml-2 h-5 w-5 shrink-0" />
               </Button>
             </div>
+          </div>
 
           {/* Video */}
           <div className="flex-1 animate-fade-in order-1 lg:order-2 w-full px-4 sm:px-0">
@@ -96,4 +97,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
