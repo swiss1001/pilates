@@ -43,20 +43,22 @@ const HeroSection = () => {
               de bem com o corpo… treinando no conforto de casa!
             </p>
 
+            {/* ✅ Botão corrigido */}
             <div className="mb-8 lg:mb-0 px-4 sm:px-0 overflow-hidden">
-             <Button
+              <Button
                 onClick={scrollToOffer}
                 size="lg"
-                className="bg-pilates-purple-600 hover:bg-pilates-purple-700 text-white px-8 py-5 text-base sm:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-full text-center leading-tight"
+                className="bg-pilates-purple-600 hover:bg-pilates-purple-700 text-white px-6 py-5 text-base sm:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-full text-center leading-snug"
               >
-                <span className="block whitespace-pre-line text-center">
+                <span className="whitespace-pre-line break-words text-center">
                   Quero entrar no{"\n"}Clube das Pilateiras
                 </span>
                 <ArrowDown className="ml-2 h-5 w-5 shrink-0" />
-             </Button>
+              </Button>
+            </div>
+          </div>
 
-
-          {/* Video */}
+          {/* ✅ Video */}
           <div className="flex-1 animate-fade-in order-1 lg:order-2 w-full px-4 sm:px-0">
             <div className="w-full max-w-full" style={{ margin: "0 auto" }}>
               <div
@@ -96,5 +98,6 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
