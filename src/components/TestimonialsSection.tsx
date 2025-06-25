@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
       name: "Marina Costa",
       age: 41,
       text: "O Clube das Pilateiras mudou minha rotina completamente. Agora tenho energia para tudo!",
-      image: "https://images.unsplash.com/photo-1590080877035-2c91be19f5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80"
+      image: "https://images.unsplash.com/photo-1585421514287-27fdb33aa6c3?ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJldHR5JTIwd29tYW58ZW58MHx8MHx8&ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       name: "Juliana Santos",
