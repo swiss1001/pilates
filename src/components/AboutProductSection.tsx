@@ -1,16 +1,15 @@
-
 const AboutProductSection = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Content */}
+            {/* Texto */}
             <div className="animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 O Que é o <span className="text-pilates-purple-600">Clube das Pilateiras</span>?
               </h2>
-              
+
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 É uma <strong className="text-pilates-purple-600">plataforma online completa</strong> com treinos de pilates e yoga, 
                 pensados para mulheres que querem sair do sedentarismo, melhorar a saúde, emagrecer, 
@@ -44,34 +43,20 @@ const AboutProductSection = () => {
               </div>
             </div>
 
-            {/* Video */}
-            <div className="relative animate-scale-in">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-pilates-purple-200 to-pilates-mint-200 rounded-3xl blur-2xl opacity-30"></div>
-                <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
-                  <vturb-smartplayer 
-                    id="vid-67526d38fbf820d8fc346500" 
-                    style={{ 
-                      display: 'block', 
-                      margin: '0 auto', 
-                      width: '100%', 
-                      maxWidth: '400px' 
-                    }}
-                  ></vturb-smartplayer>
-                  <script 
-                    type="text/javascript"
-                    dangerouslySetInnerHTML={{
-                      __html: `
-                        var s=document.createElement("script"); 
-                        s.src="https://scripts.converteai.net/1b3eff3e-0644-41a2-8abf-b6b15edc9f1c/players/67526d38fbf820d8fc346500/v4/player.js"; 
-                        s.async=true;
-                        document.head.appendChild(s);
-                      `
-                    }}
-                  />
-                </div>
+            {/* Vídeo Vertical (9:16) */}
+            <div className="relative animate-scale-in flex justify-center items-center">
+              <div className="relative w-full max-w-[360px] aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-white">
+                <iframe
+                  src="https://scripts.converteai.net/1b3eff3e-0644-41a2-8abf-b6b15edc9f1c/players/66a3ad37268488000b4c124e/embed.html"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  className="w-full h-full rounded-3xl"
+                  style={{ display: "block" }}
+                ></iframe>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -80,3 +65,5 @@ const AboutProductSection = () => {
 };
 
 export default AboutProductSection;
+
+
