@@ -29,7 +29,7 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 py-16 relative z-10 max-w-full">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 min-h-[80vh]">
-          {/* Content */}
+          {/* Texto */}
           <div className="flex-1 text-center lg:text-left animate-fade-in order-2 lg:order-1 w-full">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight px-2 sm:px-0">
               Diga Adeus ao Sedentarismo e{" "}
@@ -42,7 +42,16 @@ const HeroSection = () => {
               A plataforma definitiva para mulheres que querem se manter ativas, saudáveis e 
               de bem com o corpo… treinando no conforto de casa!
             </p>
-          {/* ✅ Video */}
+
+            {/* Botão no mobile */}
+            <div className="block lg:hidden mb-8">
+              <Button onClick={scrollToOffer} className="text-white bg-pilates-purple-600 hover:bg-pilates-purple-700 text-lg px-6 py-3 rounded-full shadow-lg">
+                Quero entrar no Clube das Pilateiras
+              </Button>
+            </div>
+          </div>
+
+          {/* Vídeo */}
           <div className="flex-1 animate-fade-in order-1 lg:order-2 w-full px-4 sm:px-0">
             <div className="w-full max-w-full" style={{ margin: "0 auto" }}>
               <div
@@ -73,8 +82,15 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* Botão no desktop */}
+      <div className="hidden lg:flex justify-center absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+        <Button onClick={scrollToOffer} className="text-white bg-pilates-purple-600 hover:bg-pilates-purple-700 text-lg px-6 py-3 rounded-full shadow-lg">
+          Quero entrar no Clube das Pilateiras
+        </Button>
+      </div>
+
+      {/* Setinha de rolagem */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
         <ArrowDown className="h-6 w-6 text-pilates-purple-400" />
       </div>
     </section>
@@ -82,6 +98,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
